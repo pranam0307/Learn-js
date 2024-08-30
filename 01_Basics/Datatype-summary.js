@@ -30,4 +30,28 @@ let myObj = {
 
 const myFunction = function(){
     console.log( );
-}
+};
+
+
+//-----------------------------------------------------------//
+ //Stack (Primitive Memory)  we get the copy of the data type
+
+ let ytName="Valscrypt.com";
+ let anotherYtname="yt.com";
+
+ console.log(anotherYtname);
+ console.log(ytName);
+
+ //Heap (Non-primitive) we get direct reference of the data type
+
+ let userOne =  {
+    name:"pranam",
+    email: "pranam@gmail.com",
+
+ };
+
+ let userTwo = userOne;
+
+ userTwo.email = "user@gmail.com";
+ console.log(userTwo.email , userOne.email);
+ 
